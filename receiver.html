@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receiver</title>
+</head>
+<body>
+  <h1>Receiver</h1>
+  <p id="received-message"></p>
+
+  <script>
+    const receivedMessage = localStorage.getItem('message');
+    document.getElementById('received-message').innerText = receivedMessage;
+    localStorage.removeItem('message'); // Remove the message after it's received
+  </script>
+</body>
+</html>
